@@ -842,3 +842,168 @@
     gap: 1rem !important;
   }
 }
+/* Base styles */
+:root {
+  --primary-color: #F6320B;
+  --hover-color: #d42a09;
+  --bg-color: #F7F4F2;
+  --text-dark: #000;
+  --placeholder-color: #999;
+}
+
+/* Companies section container */
+.companies-section {
+  display: flex;
+  background-color: var(--bg-color);
+  padding: clamp(2rem, 4vw, 3rem) clamp(0.5rem, 2vw, 1rem);
+  width: 100%;
+}
+
+.companies-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(10px, 2vw, 15px);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+/* Text content styles */
+.text-content {
+  flex: 1;
+  padding: clamp(10px, 2vw, 20px);
+  min-width: min(100%, 300px);
+}
+
+.headline {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.5;
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+}
+
+/* Subscription area styles */
+.subscription-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: clamp(10px, 2vw, 20px);
+  min-width: min(100%, 300px);
+}
+
+.email-field {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-dark);
+  font-size: clamp(14px, 2vw, 16px);
+  outline: none;
+}
+
+.email-field::placeholder {
+  color: var(--placeholder-color);
+}
+
+.subscribe-btn {
+  margin-top: clamp(1rem, 3vw, 1.6rem);
+  padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: clamp(14px, 2vw, 16px);
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 1200px) {
+  .content-wrapper {
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: clamp(1.5rem, 4vw, 2rem);
+  }
+  
+  .subscription-area {
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text-content {
+    width: 100%;
+  }
+  
+  .email-field {
+    max-width: min(100%, 400px);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-break {
+    display: none;
+  }
+  .text-content{
+    justify-content: left;
+    text-align: left;
+    align-items: baseline;
+  }
+  
+  .companies-section {
+    padding: clamp(1.5rem, 3vw, 2rem) clamp(0.5rem, 2vw, 1rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .companies-section {
+    padding: 2rem 0.5rem;
+  }
+  .companies-container{
+    padding: 0;
+  }
+  
+  .text-content,
+  .subscription-area {
+    padding: 0;
+  }
+  
+  .subscribe-btn {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .content-wrapper {
+    gap: 1rem;
+  }
+}

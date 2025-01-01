@@ -546,12 +546,25 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='section-companies'>
-                <div className='container deliver-c'>
-                    <h1 className='deliver-head'>
-                        Tailored to deliver the best<br></br> for your business
-                    </h1>
-                    <p className='deliver-para'>A flexible and adaptive process that helps<br></br> businesses launch and scale quickly.</p>
+            <section className='companies-section'>
+                <div className='container companies-container'>
+                    <div className='content-wrapper'>
+                        <div className='text-content'>
+                            <h1 className='headline'>
+                                Tailored to deliver the best<br /> for your business
+                            </h1>
+                            <p className='description'>A flexible and adaptive process that helps<br /> businesses launch and scale quickly.</p>
+                        </div>
+                        <div className='subscription-area'>
+                            <input
+                                type='email'
+                                className='email-field'
+                                placeholder='Enter your email'
+                                aria-label='Email Address'
+                            />
+                            <button className='subscribe-btn'>Subscribe Newsletter</button>
+                        </div>
+                    </div>
                 </div>
             </section>
 
