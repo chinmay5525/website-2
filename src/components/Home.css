@@ -987,7 +987,6 @@
 
   .email-field {
     max-width: min(95%, 400px);
-    text-align: center;
   }
 }
 
@@ -1012,7 +1011,7 @@
 
 @media screen and (max-width: 480px) {
   .companies-section {
-    padding: 2rem 0.5rem;
+    padding: 3rem 0.5rem;
   }
 .contact-section-flex{
   flex-direction: column;
