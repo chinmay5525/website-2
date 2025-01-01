@@ -572,7 +572,7 @@ const Home = () => {
                                 placeholder='Enter your email'
                                 aria-label='Email Address'
                             />
-                            <button className='subscribe-btn'>Subscribe Newsletter</button>
+                            <button className='subscribe-btn'>Subscribe</button>
                         </div>
                     </div>
                 </div>
