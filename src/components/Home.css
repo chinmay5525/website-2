@@ -1032,10 +1032,11 @@
   }
 
   .subscribe-btn {
-    width: 65%;
+    width: 60%;
     max-width: 400px;
     text-align: center;
     justify-content: center;
+    margin-left: auto;
   }
 
   .content-wrapper {
