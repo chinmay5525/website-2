@@ -417,6 +417,8 @@
 .service-section {
   max-width: 1550px;
   margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
 }
 
@@ -842,6 +844,7 @@
     gap: 1rem !important;
   }
 }
+
 /* Base styles */
 :root {
   --primary-color: #F6320B;
@@ -952,16 +955,16 @@
     text-align: center;
     gap: clamp(1.5rem, 4vw, 2rem);
   }
-  
+
   .subscription-area {
     align-items: center;
     width: 100%;
   }
-  
+
   .text-content {
     width: 100%;
   }
-  
+
   .email-field {
     max-width: min(100%, 400px);
     text-align: center;
@@ -972,12 +975,13 @@
   .desktop-break {
     display: none;
   }
-  .text-content{
+
+  .text-content {
     justify-content: left;
     text-align: left;
     align-items: baseline;
   }
-  
+
   .companies-section {
     padding: clamp(1.5rem, 3vw, 2rem) clamp(0.5rem, 2vw, 1rem);
   }
@@ -987,22 +991,28 @@
   .companies-section {
     padding: 2rem 0.5rem;
   }
-  .companies-container{
+
+  .companies-container {
     padding: 0;
   }
-  
+
+  .email-field {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
   .text-content,
   .subscription-area {
     padding: 0;
   }
-  
+
   .subscribe-btn {
-    width: 100%;
+    width: 65%;
     max-width: 400px;
     text-align: center;
     justify-content: center;
   }
-  
+
   .content-wrapper {
     gap: 1rem;
   }

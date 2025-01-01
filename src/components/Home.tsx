@@ -145,15 +145,15 @@ const Home = () => {
                 </div>
             </section>
             <section className='services-section-full'>
-                <div className="container service-section py-5">
+                <div className="container service-section">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 p-0">
                             <h1 className="main-heading mb-4">
                                 At KODEO, we offer expert digital services from platform consulting to digital management, designed to refine and elevate your online presence.
                             </h1>
 
                             <p className="sub-heading mb-4">
-                                Interact with your users on the platforms they prefer. Web and mobile -<br></br> we have you covered.
+                                Interact with your users on the platforms they prefer. Web and mobile -<br/> we have you covered.
                             </p>
 
                             <div className="services-container">
@@ -323,7 +323,7 @@ const Home = () => {
                 <div className='d-flex industries-wrapper'>
                     <div className='heading-container' style={{ flex: '1 1 50%', backgroundColor: '#F7F4F2' }}>
                         <h1 className='industries-heading'>REIMAGINING INDUSTRIES <br /> THROUGH DESIGN</h1>
-                        <p className='industries-para'>From agriculture, e-commerce, edtech and enterprise <br></br>solutions to fintech, healthcare, hospitality, IOT and HR solutions, <br></br>we have designed it all.</p>
+                        <p className='industries-para'>From agriculture, e-commerce, edtech and enterprise <br/>solutions to fintech, healthcare, hospitality, IOT and HR solutions, <br/>we have designed it all.</p>
                     </div>
                     <div className='grid-container' style={{ flex: '1 1 50%', backgroundColor: 'white', padding: '4rem' }}>
                         <div className='container'>
@@ -453,9 +453,9 @@ const Home = () => {
             <section className='location-section'>
                 <div>
                     <div>
-                        <h1 className='locations'>We are Culture-Driven UI UX <br></br>
+                        <h1 className='locations'>We are Culture-Driven UI UX <br/>
                             & Development Agency </h1>
-                        <p className='location-subheading'>We're a group of 180+ creative minds spread <br></br> across 4 countries touching billions of lives <br></br> through design.</p>
+                        <p className='location-subheading'>We're a group of 180+ creative minds spread <br/> across 4 countries touching billions of lives <br/>through design.</p>
                         <div className="countries-container">
                             <div className="countries-grid">
                                 <div>India</div>
@@ -603,7 +603,7 @@ const Home = () => {
             <section className='contact-section'>
                 <div>
                     <div>
-                        <h1 className='contact'>Let's make cool products <br></br> together</h1>
+                        <h1 className='contact'>Let's make cool products <br/> together</h1>
                     </div>
                     <div className="contact-form-wrapper">
                         <div className="container py-5">
