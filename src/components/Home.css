@@ -122,7 +122,7 @@
 
   .heading-container,
   .grid-container {
-    padding: 1.5rem;
+    padding: var(--mobile-padding);
   }
 
   .industries-heading {
@@ -682,12 +682,13 @@
 }
 
 @media (max-width: 768px) {
-  .service-section {
-    padding: 1rem;
-  }
+
 
   .sectors-section {
     padding: 0.5rem;
+  }
+  .sectors{
+    padding: var(--mobile-padding);
   }
 
   .service-pill {
