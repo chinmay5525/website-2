@@ -397,7 +397,7 @@ const Home = () => {
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>For a Cause</h5>
-                                    <p>Leveraging technology to promote social good, empower communities, and address pressing global challenges effectively.</p>
+                                    <p>Leveraging technology to promote social good and empower communities, and address pressing global challenges effectively.</p>
                                     <h5 className='learn-more-2'>Learn More</h5>
                                 </div>
                             </div>
