@@ -15,7 +15,7 @@ import NationalGrid from '../assets/clients/NGG.png'
 import BritGov from '../assets/clients/gcs.png'
 import Rekit from '../assets/clients/rk.png'
 import BT from '../assets/clients/bt.png'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 const Home = () => {
     const serviceRows = [
         ['UI/UX Design', 'Mobile Applications Development', 'Paid Social', 'Branding', 'Design Audit'],
