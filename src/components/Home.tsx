@@ -15,7 +15,7 @@ import NationalGrid from '../assets/clients/NGG.png'
 import BritGov from '../assets/clients/gcs.png'
 import Rekit from '../assets/clients/rk.png'
 import BT from '../assets/clients/bt.png'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 const Home = () => {
     const serviceRows = [
         ['UI/UX Design', 'Mobile Applications Development', 'Paid Social', 'Branding', 'Design Audit'],
@@ -94,11 +94,25 @@ const Home = () => {
         }
     ];
 
+    const scrollContainerRef = useRef(null);
 
+    const scrollLeft = () => {
+        scrollContainerRef.current.scrollBy({
+            left: -300, // Scroll left by 300px
+            behavior: 'smooth',
+        });
+    };
+
+    const scrollRight = () => {
+        scrollContainerRef.current.scrollBy({
+            left: 300, // Scroll right by 300px
+            behavior: 'smooth',
+        });
+    };
     return (
         <div>
             <section>
-
+            
             </section>
             <section>
                 <div className="container-fluid p-0" style={{ marginTop: '60px' }}>
@@ -153,7 +167,7 @@ const Home = () => {
                             </h1>
 
                             <p className="sub-heading mb-4">
-                                Interact with your users on the platforms they prefer. Web and mobile -<br/> we have you covered.
+                                Interact with your users on the platforms they prefer. Web and mobile -<br /> we have you covered.
                             </p>
 
                             <div className="services-container">
@@ -177,7 +191,7 @@ const Home = () => {
 
             <section className='case-study-section'>
                 <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 15px" }} className="d-flex justify-content-between align-items-center mb-4">
-                    <h2 className='case-heading'>CASE STUDIES</h2>
+                    <h2 className='case-heading'>Case Studies</h2>
                     <button className="btn btn-danger rounded-pill">See All</button>
                 </div>
 
@@ -322,8 +336,8 @@ const Home = () => {
             <section className='industries-color'>
                 <div className='d-flex industries-wrapper'>
                     <div className='heading-container' style={{ flex: '1 1 50%', backgroundColor: '#F7F4F2' }}>
-                        <h1 className='industries-heading'>REIMAGINING INDUSTRIES <br /> THROUGH DESIGN</h1>
-                        <p className='industries-para'>From agriculture, e-commerce, edtech and enterprise <br/>solutions to fintech, healthcare, hospitality, IOT and HR solutions, <br/>we have designed it all.</p>
+                        <h1 className='industries-heading'>Reimagine Industries <br /> through Designs</h1>
+                        <p className='industries-para'>From agriculture, e-commerce, edtech and enterprise <br />solutions to fintech, healthcare, hospitality, IOT and HR solutions, <br />we have designed it all.</p>
                     </div>
                     <div className='grid-container' style={{ flex: '1 1 50%', backgroundColor: 'white', padding: '4rem' }}>
                         <div className='container'>
@@ -463,9 +477,9 @@ const Home = () => {
             <section className='location-section'>
                 <div>
                     <div>
-                        <h1 className='locations'>We are Culture-Driven UI UX <br/>
+                        <h1 className='locations'>We are Culture-Driven UI UX <br />
                             & Development Agency </h1>
-                        <p className='location-subheading'>We're a group of 180+ creative minds spread <br/> across 4 countries touching billions of lives <br/>through design.</p>
+                        <p className='location-subheading'>We're a group of 180+ creative minds spread <br /> across 4 countries touching billions of lives <br />through design.</p>
                         <div className="countries-container">
                             <div className="countries-grid">
                                 <div>India</div>
@@ -613,7 +627,7 @@ const Home = () => {
             <section className='contact-section'>
                 <div className='contact-section-flex'>
                     <div>
-                        <h1 className='contact'>Let's make cool products <br/> together</h1>
+                        <h1 className='contact'>Let's make cool products <br /> together</h1>
                     </div>
                     <div className="contact-form-wrapper">
                         <div className="container py-5">
